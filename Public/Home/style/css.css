@@ -1,0 +1,69 @@
+@charset "UTF-8";
+#lunbo{
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+fieldset, img {
+    border: 0;
+    vertical-align: top;
+}
+
+a, input, button, select, textarea {
+    outline: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+}
+
+.slide {
+    height: 500px;
+    margin-left:95px;
+    position: relative;
+}
+
+.slide .slidepic {
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+
+.slide .slidepic img {
+    width: 100%;
+}
+
+.arrow {
+    opacity: 0;
+}
+
+.prev, .next {
+    width: 76px;
+    height: 112px;
+    position: absolute;
+    top: 50%;
+    margin-top: -56px;
+    background: url(../images/prev.png) no-repeat;
+    z-index: 99;
+}
+
+.next {
+    right: 0;
+    background-image: url(../images/next.png);
+}
+
+
+
+
+
+
+
+

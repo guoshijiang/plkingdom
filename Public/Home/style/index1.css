@@ -1,0 +1,218 @@
+/*
+@功能：首页顶部css定义
+@作者：郭世江
+@时间：2016年11月19日
+*/
+/*顶部css开始*/
+.topnav{
+	width: 100%; 
+	height: 30px;
+	background:#efefef url("../images/bg1.png") 0 0  repeat-x;
+}
+.topnav_right li{
+	float: left; 
+	display: inline; 
+	height: 30px; 
+	line-height: 30px; 
+	padding:0 5px;
+}
+.topnav_right li.line{
+	color: #ccc;
+}
+/*顶部css结束*/
+
+/*logo和搜索框css开始*/
+.logo{
+	width: 100%; 
+	height: 82px;
+	background-color:#efefee;
+}
+
+.search{
+	margin-top: 20px;
+}
+
+/*用户中心*/
+.user{
+	width:112px;
+	height: 30px;
+	margin-top:20px;
+	position:relative; 
+	z-index:100009;
+}
+.user dt{
+	width:112px; 
+	height: 30px; 
+	background: url("../images/icon.png") -64px -320px no-repeat; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 10; 
+	cursor: pointer; 
+	overflow: hidden;
+}
+
+.user dt em{
+	display: inline-block; 
+	width:24px; 
+	height: 24px; 
+	margin: 2px 0 0 3px;  
+	background: url("../images/icon.png") -202px -176px no-repeat;
+}
+.user dt a{
+	display: inline-block; 
+	height: 30px; 
+	line-height: 30px; 
+	vertical-align: top; 
+	padding-left: 5px;  
+}
+
+.user dt b{
+	display: inline-block; 
+	width: 13px; 
+	height: 7px; 
+	position: absolute; 
+	right: 10px; 
+	top:13px;
+}
+
+.user dd{
+	width: 310px; 
+	display: none; 
+	background: #fff;  
+	border: 1px solid #e3e3e3; 
+	position: absolute; top:31px; 
+	ight: 1px; z-index:8; 
+	border-radius: 5px 0 5px 5px; 
+	-webkit-border-radius:5px 0 5px 5px;
+}
+
+.user .prompt{
+	height: 37px; 
+	line-height: 37px; 
+	padding-left: 10px; 
+	background: #fcfcfc; 
+	border-radius: 5px 0 5px 5px; 
+	-webkit-border-radius:5px 0 5px 5px; }
+
+.user .prompt a{
+	color: #005EA7;
+}
+
+/*鼠标悬停时css js 控制切换*/
+.user dt.on{
+	height:32px;
+}
+
+.uclist ul{
+	width:134px; 
+	padding:0 10px;
+}
+
+.uclist ul.list1{
+	border-right: 1px solid #e6e6e6;
+}
+
+.uclist li{
+	border-bottom: 1px dotted #ccc;
+}
+
+.uclist li a{
+	display: block; 
+	height: 18px; 
+	padding: 5px; 
+	color: #005EA7; 
+}
+
+.uclist li a:hover{
+	background: #f5f5f5; 
+	color: #c00; 
+	text-decoration: none;
+}
+
+.viewlist{
+	background:#f3f3f3;
+}
+
+.viewlist h3{
+	height: 30px;
+	line-height: 30px; 
+	padding-left: 10px;
+}
+
+.viewlist ul{
+	width: 310px; 
+	height: 60px;
+}
+
+.viewlist li{
+	float: left; 
+	padding-left: 10px;
+}
+
+.viewlist li img{
+	width: 50px; 
+	height: 50px; 
+	border: 1px solid #ddd;
+}
+
+/* 头部购物车信息*/
+.cart{
+	width:131px; 
+	height: 30px; 
+	margin-top: 20px;
+	position: relative; 
+	z-index: 100009;  
+}
+
+.cart dt{
+	width: 131px; 
+	height: 30px; 
+	background: url("../images/icon.png") 0 -252px no-repeat; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 10;
+}
+
+.cart dt a{
+	display: inline-block;
+ 	padding:7px 1px 0 40px; 
+ 	vertical-align: top;
+ }
+
+.cart dt b{
+	display: inline-block;
+	width:7px; height: 11px; 
+	margin-top:10px;
+}
+
+.cart dd{
+	width: 350px;  
+	display: none; 
+	border: 1px solid #e3e3e3; 
+	position: absolute;
+	top:31px; right: 0px; 
+	z-index:8; border-radius: 5px 0 5px 5px; 
+	-webkit-border-radius:5px 0 5px 5px; 
+}
+
+.cart .prompt{
+	height: 37px; 
+	line-height: 37px; 
+	text-align: center; 
+	background: #fcfcfc; 
+	border-radius: 5px 0 5px 5px; 
+	-webkit-border-radius:5px 0 5px 5px;
+}
+
+/*鼠标悬停时 css js控制切换*/
+.cart dt.on{
+	height:32px;
+	background: url("../images/icon.png") 0 -283px;
+}
+/*logo和搜索框css结束*/
+
+/*产品分区开始*/
+
+/*产品分区结束*/
