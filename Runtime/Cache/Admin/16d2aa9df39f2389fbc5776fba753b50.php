@@ -30,10 +30,10 @@ body {
 	color: #295568;
 }
 a:link{
-    color:#e1e2e3; text-decoration:none;
+    color:#3b6375; text-decoration:none;
 }
 a:visited{
-    color:#e1e2e3; text-decoration:none;
+    color:#3b6375; text-decoration:none;
 }
 -->
 </style>
@@ -53,7 +53,7 @@ a:visited{
               </tr>
             </table></td>
             <td><div align="right"><span class="STYLE1">
-              <a href="<?php echo U('tianjia');?>"><img src="<?php echo C('AD_IMG_URL');?>add.gif" width="10" height="10" /> 添加</a>   &nbsp; 
+              <a href="<?php echo U('tianjia');?>" target='_self'><img src="<?php echo C('AD_IMG_URL');?>add.gif" width="10" height="10" /> 添加</a>   &nbsp; 
               </span>
               <span class="STYLE1"> &nbsp;</span></div></td>
           </tr>
@@ -70,16 +70,11 @@ a:visited{
         <td width="10%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">商品id</span></div></td>
         <td width="15%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">商品名称</span></div></td>
         <td width="14%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">价格</span></div></td>
-        <td width="16%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">数量</span></div></td>
-        <td width="10%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">重量</span></div></td>
-
-        <td width="10%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">详情</span></div></td>
-
+        <td width="16%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">重量</span></div></td>
+        <td width="10%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">数量</span></div></td>
+        <td width="10%" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">logo图片</span></div></td>
         <td width="*" height="20" bgcolor="d3eaef" class="STYLE6"><div align="center"><span class="STYLE10">基本操作</span></div></td>
       </tr>
-
-
-      <!--使用TP框架的模板引擎-->
       <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
         <td height="20" bgcolor="#FFFFFF"><div align="center">
           <input type="checkbox" name="checkbox2" id="checkbox2" />
@@ -87,14 +82,17 @@ a:visited{
         <td height="20" bgcolor="#FFFFFF" class="STYLE6"><div align="center"><span class="STYLE19"><?php echo ($v["goods_id"]); ?></span></div></td>
         <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><?php echo ($v["goods_name"]); ?></div></td>
         <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><?php echo ($v["goods_price"]); ?></div></td>
-        <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><?php echo ($v["goods_number"]); ?></div></td>
         <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><?php echo ($v["goods_weight"]); ?></div></td>
-        <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><?php echo ($v["goods_introduce"]); ?></div></td>
+        <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><?php echo ($v["goods_number"]); ?></div></td>
+
+        <td height="20" bgcolor="#FFFFFF" class="STYLE19"><div align="center"><img src="<?php echo C('SITE_URL'); echo (substr($v["goods_small_logo"],2)); ?>" alt="" width='120'/></div></td>
+
         <td height="20" bgcolor="#FFFFFF"><div align="center" class="STYLE21">
-        <img src="<?php echo C('AD_IMG_URL');?>del.gif" width="10" height="10" /> 删除 | 查看 | <img src="<?php echo C('AD_IMG_URL');?>edit.gif" width="10" height="10" /> 编辑</div></td>
+        <img src="<?php echo C('AD_IMG_URL');?>del.gif" width="10" height="10" /> 删除 | 查看 | <img src="<?php echo C('AD_IMG_URL');?>edit.gif" width="10" height="10" />
+
+        <a class='STYLE21' href="<?php echo U('upd',array('goods_id'=>$v['goods_id']));?>">编辑</a></div></td>
+        
       </tr><?php endforeach; endif; ?>
-      <!--使用TP框架模板引擎结束 -->
-    
     </table></td>
   </tr>
   <tr>

@@ -12,7 +12,10 @@ return array(
 	'AD_CSS_URL'=>'/Public/Admin/css/',
 	'AD_JS_URL'=>'/Public/Admin/js/',
 	'AD_IMG_URL'=>'/Public/Admin/images/',
-
+ 
+	//给网站域名设置一个配置变量(方便图片等信息访问)
+  'SITE_URL' => 'http://www.plkingdom.com/',
+    
 	//为Plugin插件包，设置配置变量访问路径
 	'PLUGIN_URL' => '/Common/Plugin/',
 
